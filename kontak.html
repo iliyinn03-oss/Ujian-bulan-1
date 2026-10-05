@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Kontak - Kuliner Nusantara</title>
+</head>
+
+<body id="atas">
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand"><i class="fa-solid fa-utensils"></i>Kuliner Nusantara</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container kontak-layout">
+      <section class="info-kontak">
+        <h1 class="section-title">Hubungi Kami</h1>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i><a
+              href="mailto:info@kulinernusantara.co.id">info@kulinernusantara.co.id</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+6281234567890">+62 812 3456 7890</a></li>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" target="_blank"
+              rel="noopener">Instagram kami</a></li>
+          <li><i class="fa-solid fa-clock"></i>Setiap hari 10.00 - 22.00 WIB</li>
+        </ul>
+        <a href="#atas" class="kembali">Kembali ke atas</a>
+      </section>
+
+      <section>
+        <form action="#" method="post">
+          <div class="form-group"><label for="nama">Nama lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Budi Santoso" required>
+          </div>
+          <div class="form-group"><label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="budi@email.com" required>
+          </div>
+          <div class="form-group"><label for="hp">Nomor HP</label>
+            <input type="tel" id="hp" name="hp" placeholder="08123456789" required>
+          </div>
+          <div class="form-group"><label for="tgl">Tanggal kedatangan</label>
+            <input type="date" id="tgl" name="tgl" required>
+          </div>
+          <div class="form-group"><label for="tamu">Jumlah tamu</label>
+            <input type="number" id="tamu" name="tamu" min="1" max="50" value="2">
+          </div>
+          <div class="form-group pilihan">
+            <p><strong>Area duduk</strong></p>
+            <label><input type="radio" name="area" value="indoor" checked> Dalam ruangan</label>
+            <label><input type="radio" name="area" value="outdoor"> Luar ruangan</label>
+          </div>
+          <div class="form-group"><label for="acara">Jenis acara</label>
+            <select id="acara" name="acara">
+              <option>Makan keluarga</option>
+              <option>Rapat kerja</option>
+              <option>Ulang tahun</option>
+            </select>s
+          </div>
+          <div class="form-group">
+            <label for="pesan">Catatan</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Alergi atau permintaan khusus">
+            </textarea>
+          </div>
+          <div class="form-group"><label><input type="checkbox" name="setuju" required> Saya setuju data saya dipakai
+              untuk reservasi</label></div>
+          <div class="form-aksi"><button type="submit" class="btn">Kirim</button><button type="reset"
+              class="btn btn-outline">Reset</button></div>
+        </form>
+      </section>
+    </div>
+    <div class="container peta">
+      <h2 class="section-title">Lokasi</h2>
+      <iframe src="https://www.google.com/maps?q=Kebayoran+Baru+Jakarta&output=embed" title="Peta lokasi"
+        loading="lazy"></iframe>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kuliner Nusantara</h4>
+          <p>Restoran masakan tradisional khas kepulauan Indonesia.</p>
+        </div>
+        <div>
+          <h4>Tautan</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Jl. Nusantara No. 88, Jakarta</li>
+            <li><i class="fa-solid fa-phone"></i> +62 812 3456 7890</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kuliner Nusantara. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
